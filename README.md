@@ -169,7 +169,7 @@ our system then trained three traditional machine learning models using the CSV 
 * **The Result:** The CNN learned steadily, dropping its loss from `2.08` down to `0.42`. It finished with a validation accuracy of **82.90%** and an internal training accuracy of **85.76%**.
 * It then successfully saved this trained brain as `tomato_disease48.h5`.
 
-[Handshake_capture_1_.txt](https://raw.githubusercontent.com/0x0z0n/Research/refs/heads/main/posts/CropVision/tomato_disease48.h5 "Results")
+[tomato_disease48.h5](https://raw.githubusercontent.com/0x0z0n/Research/refs/heads/main/posts/CropVision/tomato_disease48.h5 "Results")
 
 [cnnacc.py](https://raw.githubusercontent.com/0x0z0n/Research/refs/heads/main/posts/CropVision/cnnacc.py "Results")
 
@@ -232,4 +232,3 @@ The CropVision pipeline successfully demonstrates that Deep Convolutional Neural
 * **Explainable AI (XAI):** Integrate LIME or Grad-CAM to generate "heatmaps" over the uploaded leaves, showing the farmer exactly *which part* of the leaf caused the AI to make its prediction.
 * **Adversarial Security:** As a security enhancement, implement input validation and file-type sanitization on the Flask backend to prevent malicious payload execution through the image upload portal.
 * **Mobile Portability:** Convert the `.h5` model to a quantized TensorFlow Lite (`.tflite`) format to allow offline, on-device inference for farmers without internet access.
-

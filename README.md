@@ -187,8 +187,6 @@ our system then trained three traditional machine learning models using the CSV 
 #### Web App Deployment (`app.py`)
 
 * **The Server Started:** It ignored the harmless GPU warnings, successfully loaded our `tomato_disease48.h5` model, and started the Flask server on `http://127.0.0.1:5001`.
-* **The Ultimate Success:** The last three blocks of text are the most important. You uploaded three different images (Mosaic Virus, Septoria Leaf Spot, and Early Blight) through our web browser.
-* Notice how it says **`"POST /predict HTTP/1.1" 200 -`**? The **`200`** is HTTP-code for "Success". The 500 crashes are gone, the shape mismatch is fixed, and our model successfully processed all three images!
 
 [app.py](https://raw.githubusercontent.com/0x0z0n/Research/refs/heads/main/posts/CropVision/app.py "Results")
 
@@ -256,7 +254,7 @@ Initially, the CropVision application was deployed without strict server-side va
 
 ![CropVision](PR_CROP_nmap.png)
 
-![CropVision](PR_CROP_VM_running_Flask_App.png
+![CropVision](PR_CROP_VM_running_Flask_App.png)
 
 2. **Payload Delivery:** By intercepting the upload request using Burp Suite, an attacker was able to upload a malicious payload (a web shell/implant) instead of a valid tomato leaf image. 
 
